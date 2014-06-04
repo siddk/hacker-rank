@@ -14,11 +14,11 @@ while i < n:
 
     name = record[0]
     marks = record[1:]
-    marks = map(int, marks)
+    marks = map(float, marks)
 
     average = sum(marks) / 3
     record_dict[name] = average
     i += 1 #iterate
 
 target = raw_input()
-print record_dict[target]
+print "%.2f" % record_dict[target]
