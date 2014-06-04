@@ -6,3 +6,7 @@ You are given two integers. Store them into two variables and exchange them. Mak
 
 num1 = input()
 num2 = input()
+
+tup = (num1, num2)
+print tup[1]
+print tup[0]
