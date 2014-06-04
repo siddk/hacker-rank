@@ -7,4 +7,4 @@ Given a first and last name, print "Hello firstname lastname. You just delved in
 firstname = raw_input()
 lastname = raw_input()
 
-print "Hello %s %s. You just delved into python." % (firstname, lastname)
+print "Hello %s %s! You just delved into python." % (firstname, lastname)
