@@ -5,12 +5,26 @@ You are given two sets of integers M and N and you have to print their symmetric
 """
 
 m = input()
-m_list = input()
+m_lis = raw_input()
 n = input()
-n_list = input()
+n_lis = raw_input()
 
-m_list = m_list.split()
+m_list = m_lis.split()
 m_list = list(map(int, m_list))
 
-n_list = n_list.split()
+n_list = n_lis.split()
 n_list = list(map(int, n_list))
+
+m_set = set(m_list)
+n_set = set(n_list)
+
+intersect = m_set.intersection(n_set)
+
+for i in intersect:
+    m_set.remove(i)
+    n_set.remove(i)
+
+union = m_set.union(n_set)
+
+for i in sorted(union):
+    print i
