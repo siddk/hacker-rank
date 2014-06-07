@@ -17,5 +17,7 @@ while (count < number):
         count += 1
     else:
         fibo_list.append(fibo_list[count-1] + fibo_list[count-2])
+        count += 1
 
+fibo_list = map(lambda x: x ** 3, fibo_list)
 print fibo_list
