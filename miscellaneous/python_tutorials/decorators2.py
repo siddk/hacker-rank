@@ -6,6 +6,13 @@ Each person has a first name, last name, age, and sex. Print their names in a sp
 
 number = input()
 count = 0
+master_list = []
 
 while(count < number):
-    count++
+    record = raw_input()
+    record_list = record.split()
+    record_tuple = tuple(record_list)
+    #Tuple of the form firstname, lastname, age, gender
+
+    master_list.append(record_tuple)
+    count += 1
