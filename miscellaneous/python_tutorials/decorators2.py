@@ -16,3 +16,6 @@ while(count < number):
 
     master_list.append(record_tuple)
     count += 1
+
+master_list = sorted(master_list, key=lambda x: x[2])
+print master_list
