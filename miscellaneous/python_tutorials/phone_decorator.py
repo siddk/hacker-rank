@@ -14,3 +14,7 @@ while (count < total):
     count += 1
 
 record_list = sorted(record_list)
+
+for number in record_list:
+    number = str(number)
+    print "+91 %s %s" % (number[:5], number[5:])
