@@ -18,3 +18,9 @@ while(count < number):
     count += 1
 
 master_list = sorted(master_list, key=lambda x: x[2])
+
+for entry in master_list:
+    if entry[3] is "M":
+        print "Mr. %s %s" % (entry[0], entry[1])
+    else:
+        print "Ms. %s %s" % (entry[0], entry[1])
