@@ -11,6 +11,7 @@ str_list = map(lambda x: int(x), str_list.split())
 
 cur_max = max(str_list)
 
+#Check for duplicates
 while(True):
     str_list.remove(cur_max)
     if max(str_list) == cur_max:
