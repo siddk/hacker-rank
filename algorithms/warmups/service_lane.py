@@ -14,6 +14,7 @@ t = n_t[1]
 
 width_array = raw_input()
 width_array = map(lambda x: int(x), width_array.split())
+print width_array
 
 cur_test_case = 0
 
@@ -23,6 +24,6 @@ while (cur_test_case < t):
     start_index = indices[0]
     end_index = indices[1]
 
-    cur_array = width_array[start_index: end_index]
+    cur_array = width_array[start_index: end_index+1]
     print min(cur_array)
     cur_test_case += 1
