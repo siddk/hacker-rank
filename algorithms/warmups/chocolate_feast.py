@@ -11,7 +11,7 @@ for case in range(num_test_cases):
     num_chocolates = 0
 
     num_chocolates += N / C
-    num_wrappers += N / C
+    num_wrappers = N / C
 
     while(num_wrappers > 0):
         if num_wrappers >= M:
