@@ -30,7 +30,7 @@ def find_palindrome(target_string):
 num_test_cases = input()
 cur_test_case = 0
 
-while (cur_test_case < num_test_case):
+while (cur_test_case < num_test_cases):
     target_string = raw_input()
     find_palindrome(target_string)
     cur_test_case += 1
