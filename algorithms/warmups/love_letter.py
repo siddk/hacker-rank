@@ -23,6 +23,7 @@ def find_palindrome(target_string):
         temp_changes = abs(ord(back[index]) - ord(front[index]))
         num_changes += temp_changes
 
+    #Print steps
     print num_changes
 
 
