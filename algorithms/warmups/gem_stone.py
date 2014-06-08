@@ -23,5 +23,5 @@ while (cur_case < num_test_cases):
             cur_set.add(element)
         intersection_set = intersection_set.intersection(cur_set)
         cur_case += 1
-
+#Print answer
 print len(intersection_set)
