@@ -25,3 +25,4 @@ while (cur_test_case < t):
 
     cur_array = width_array[start_index: end_index]
     print min(cur_array)
+    cur_test_case += 1
