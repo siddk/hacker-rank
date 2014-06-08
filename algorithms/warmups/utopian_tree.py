@@ -14,6 +14,7 @@ def get_height(cycles):
             cur_cycle += 1
         else:
             height += 1
+            cur_cycle += 1
     print height
 
 num_test_cases = input()
