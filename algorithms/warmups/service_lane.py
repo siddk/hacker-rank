@@ -18,4 +18,10 @@ width_array = map(lambda x: int(x), width_array.split())
 cur_test_case = 0
 
 while (cur_test_case < t):
-    
+    indices = raw_input()
+    indices = map(lambda x: int(x), indices.split())
+    start_index = indices[0]
+    end_index = indices[1]
+
+    cur_array = width_array[start_index: end_index]
+    print min(cur_array)
