@@ -14,7 +14,6 @@ t = n_t[1]
 
 width_array = raw_input()
 width_array = map(lambda x: int(x), width_array.split())
-print width_array
 
 cur_test_case = 0
 
