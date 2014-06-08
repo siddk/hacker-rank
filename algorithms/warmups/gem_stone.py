@@ -5,3 +5,6 @@ John has discovered various rocks. Each rock is composed of various elements, an
 
 Given the list of rocks with their compositions, you have to print how many different kinds of gem-elements he has.
 """
+
+num_test_cases = input()
+cur_case = 0
