@@ -9,6 +9,7 @@ current_test_case = 0
 
 while (current_test_case < num_test_cases):
     num_cuts = input()
+    # Cut logic
     horizontal_cuts = num_cuts / 2
     vertical_cuts = num_cuts - horizontal_cuts
     print horizontal_cuts * vertical_cuts
