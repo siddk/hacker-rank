@@ -15,7 +15,7 @@ for case in xrange(num_test_cases):
     step_list = []
     for n in xrange(num_steps):
         num_a = n
-        num_b = num_steps - n
+        num_b = (num_steps-1) - n
 
         permutation_lst = []
         for i in xrange(num_a): permutation_lst.append(a)
