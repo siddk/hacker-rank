@@ -11,4 +11,12 @@ for case in xrange(num_test_cases):
     a = input()
     b = input()
 
-    
+    for n in xrange(num_steps+1):
+        num_a = n
+        num_b = num_steps - n
+
+        lst = []
+        for i in xrange(num_a):
+            lst.append(a)
+        for i in xrange(num_b):
+            lst.append(b)
