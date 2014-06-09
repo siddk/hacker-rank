@@ -17,13 +17,7 @@ for case in xrange(num_test_cases):
         num_a = n
         num_b = (num_steps-1) - n
 
-        permutation_lst = []
-        for i in xrange(num_a): permutation_lst.append(a)
-        for i in xrange(num_b): permutation_lst.append(b)
-
-        perm_iterator = itertools.permutations(permutation_lst)
-        for permutation in perm_iterator:
-            step_list.append(sum(permutation))
+        step_list.append((num_a * a) + (num_b * b))
 
     final = sorted(set(step_list))
     print " ".join([str(x) for x in final])
