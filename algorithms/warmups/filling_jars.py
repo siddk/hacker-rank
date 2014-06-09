@@ -15,7 +15,7 @@ for operation in xrange(m):
     operate = raw_input().split()
     operate = map(lambda x: int(x), operate)
 
-    for index in xrange(operate[0]-1, operate[1]):
-        big_sum += operate[2]
+    add = (operate[1] - operate[0] + 1) * operate[2]
+    big_sum += add
 
 print int(big_sum/n)
