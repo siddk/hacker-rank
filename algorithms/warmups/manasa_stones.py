@@ -12,12 +12,17 @@ for case in xrange(num_test_cases):
     a = input()
     b = input()
 
+    step_list = []
     for n in xrange(num_steps):
         num_a = n
         num_b = num_steps - n
 
         permutation_lst = []
-        for i in xrange(num_a):
-            permutation_lst.append(a)
-        for i in xrange(num_b):
-            permutation_lst.append(b)
+        for i in xrange(num_a): permutation_lst.append(a)
+        for i in xrange(num_b): permutation_lst.append(b)
+
+        perm_iterator = itertools.permutations(permutation_lst)
+        for permutation in perm_iterator:
+            step_list.append(sum(permutation))
+
+    print sorted(step_list)
