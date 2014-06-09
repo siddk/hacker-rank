@@ -25,4 +25,4 @@ for case in xrange(num_test_cases):
         for permutation in perm_iterator:
             step_list.append(sum(permutation))
 
-    print set(sorted(step_list))
+    print sorted(set(step_list))
