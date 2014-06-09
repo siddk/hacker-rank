@@ -26,4 +26,4 @@ for case in xrange(num_test_cases):
             step_list.append(sum(permutation))
 
     final = sorted(set(step_list))
-    print "".join([str(x) for x in final])
+    print " ".join([str(x) for x in final])
