@@ -11,5 +11,4 @@ for case in xrange(num_test_cases):
     a = input()
     b = input()
 
-    if b < a: a, b = b, a
     
