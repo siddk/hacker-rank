@@ -18,3 +18,5 @@ for operation in xrange(m):
 
     for index in xrange(operate[0]-1, operate[1]-1):
         big_list[index] += operate[2]
+
+print int(sum(big_list)/len(big_list))
