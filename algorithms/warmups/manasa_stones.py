@@ -12,3 +12,4 @@ for case in xrange(num_test_cases):
     b = input()
 
     if b < a: a, b = b, a
+    
