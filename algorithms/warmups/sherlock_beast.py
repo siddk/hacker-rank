@@ -32,9 +32,8 @@ for case in xrange(num_test_cases):
 
     else:
         num_threes = num_digits - num_fives
+        big_str = ""
+        for i in xrange(num_fives): big_str += "5"
+        for i in xrange(num_threes): big_str += "3"
 
-    big_str = ""
-    for i in xrange(num_fives): big_str += "5"
-    for i in xrange(num_threes): big_str += "3"
-
-    print big_str
+        print big_str
