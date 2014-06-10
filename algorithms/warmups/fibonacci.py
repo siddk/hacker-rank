@@ -17,7 +17,7 @@ import math
 
 num_test_cases = input()
 
-for case in xrange(num_test_case):
+for case in xrange(num_test_cases):
     n = input()
     possibility_one = (5 * (n ** 2)) + 4
     possibility_two = (5 * (n ** 2)) - 4
