@@ -24,7 +24,7 @@ end_index = k-1
 
 while end_index < n:
     cur_fairness = candies[end_index] - candies[start_index]
-    if min_diff = "x": min_diff = cur_fairness
+    if min_diff == "x": min_diff = cur_fairness
     elif cur_fairness < min_diff: min_diff = cur_fairness
 
     start_index += 1
