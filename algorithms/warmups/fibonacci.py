@@ -15,3 +15,6 @@ fibn = fibn-1 + fibn-2 ∀ n > 1
 #NOTE: I learned earlier in math that a number is only a fibonacci number if 5n^2 + 4 or 5n^2 - 4 is a perfect square, so check for this to get a somewhat optimal solution time.
 
 num_test_cases = input()
+
+for case in xrange(num_test_case):
+    n = input()
