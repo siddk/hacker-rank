@@ -11,6 +11,7 @@ fib0 = 0
 fib1 = 1
 fibn = fibn-1 + fibn-2 ∀ n > 1
 """
+import math
 
 #NOTE: I learned earlier in math that a number is only a fibonacci number if 5n^2 + 4 or 5n^2 - 4 is a perfect square, so check for this to get a somewhat optimal solution time.
 
@@ -21,8 +22,10 @@ for case in xrange(num_test_case):
     possibility_one = (5 * (n ** 2)) + 4
     possibility_two = (5 * (n ** 2)) - 4
 
-    boolean_one = (int(possibility_one) == possibility_one)
-    boolean_two = (int(possibility_two)) == possibility_two)
+    boolean_one = (int(math.sqrt(possibility_one)) == math.sqrt(possibility_one))
+    boolean_two = (int(math.sqrt(possibility_two)) == math.sqrt(possibility_two))
 
     if boolean_one or boolean_two:
-        
+        print "IsFibo"
+    else:
+        print "IsNotFibo"
