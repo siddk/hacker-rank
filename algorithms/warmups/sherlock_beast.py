@@ -12,3 +12,14 @@ A ‘Decent’ Number has -
 
 Meanwhile, the counter to destruction of ‘The Beast’ is running very fast. Can you save ‘The Beast’, and find the key before Sherlock?
 """
+
+num_test_cases = input()
+
+for case in xrange(num_test_cases):
+    num_digits = input()
+    temp = num_digits
+    num_fives = 0
+    num_threes = 0
+
+    while(temp > 0):
+        if (temp % 3 == 0):
