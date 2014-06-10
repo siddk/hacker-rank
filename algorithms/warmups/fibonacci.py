@@ -18,3 +18,11 @@ num_test_cases = input()
 
 for case in xrange(num_test_case):
     n = input()
+    possibility_one = (5 * (n ** 2)) + 4
+    possibility_two = (5 * (n ** 2)) - 4
+
+    boolean_one = (int(possibility_one) == possibility_one)
+    boolean_two = (int(possibility_two)) == possibility_two)
+
+    if boolean_one or boolean_two:
+        
