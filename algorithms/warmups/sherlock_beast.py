@@ -23,3 +23,12 @@ for case in xrange(num_test_cases):
 
     while(temp > 0):
         if (temp % 3 == 0):
+            num_fives = temp
+            break;
+        temp -= 5
+
+    if (temp < 0) or ((num_digits - num_fives) % 5 != 0):
+        print "-1"
+
+    else:
+        num_threes = num_digits - num_fives
