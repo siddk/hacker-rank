@@ -9,3 +9,8 @@ max(x1,x2,…xk) - min(x1,x2,…xk)
 
 where max denotes the highest value amongst the elements, and min denotes the least value amongst the elements. Can you figure out the minimum unfairness and print it?
 """
+
+n = input()
+k = input()
+candies = [input() for _ in range(0,n)]
+candies.sort()
