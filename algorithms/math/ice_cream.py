@@ -24,3 +24,13 @@ for case in xrange(num_test_cases):
             cost_list.append(price)
 
         index_count += 1
+
+    solution_set = []
+
+    for i in valid_indices:
+        for j in valid_indices[valid_indices.index(i)+1:]:
+            if (cost_list[i] + cost_list[j] == money):
+                solution_set.append((i+1, j+1))
+
+    for sol_tuple in solution_set:
+        print sol_tuple[0], sol_tuple[1]
