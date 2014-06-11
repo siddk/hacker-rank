@@ -7,4 +7,20 @@ Sunny and Johnny together have M dollars which they intend to use at the ice cre
 num_test_cases = input()
 
 for case in xrange(num_test_cases):
-    
+    money = input()
+    num_flavors = input()
+    costs = raw_input().split()
+
+    valid_indices = []
+    cost_list = []
+    index_count = 0
+
+    for price in costs:
+        price = int(price)
+        if price < money:
+            valid_indices.append(index_count)
+            cost_list.append(price)
+        else:
+            cost_list.append(price)
+
+        index_count += 1
