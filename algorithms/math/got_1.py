@@ -9,3 +9,13 @@ The king has a list of words. Help him figure out if any anagram of the words ca
 """
 
 input_string = raw_input()
+
+letter_list = []
+letter_count = []
+
+for letter in input_string:
+    if letter in letter_list:
+        letter_count[letter_list.index(letter)] += 1
+    else:
+        letter_list.append(letter)
+        letter_count.append(1)
