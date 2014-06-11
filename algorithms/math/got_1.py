@@ -7,3 +7,5 @@ The king wants to lock the door, so that, the Dothraki can’t enter. But, to lo
 
 The king has a list of words. Help him figure out if any anagram of the words can be a palindrome or not?
 """
+
+input_string = raw_input()
