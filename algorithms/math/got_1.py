@@ -19,3 +19,15 @@ for letter in input_string:
     else:
         letter_list.append(letter)
         letter_count.append(1)
+
+odd_count = 0
+
+for count in letter_count:
+    if (count % 2 != 0):
+        odd_count += 1
+
+if odd_count > 1:
+    print "NO"
+
+else:
+    print "YES"
