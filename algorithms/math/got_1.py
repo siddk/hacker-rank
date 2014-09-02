@@ -23,7 +23,7 @@ for letter in input_string:
 odd_count = 0
 
 for count in letter_count:
-    if (count % 2 != 0):
+    if count % 2 != 0:
         odd_count += 1
 
 if odd_count > 1:
