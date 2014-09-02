@@ -10,10 +10,10 @@ if __name__ == "__main__":
 
     num_test_cases = input()
 
-    for case in xrange(num_test_cases):
+    for case in range(num_test_cases):
         money = input()
         num_flavors = input()
-        costs = raw_input().split()
+        costs = input().split()
 
         valid_indices = []
         cost_list = []
@@ -33,8 +33,8 @@ if __name__ == "__main__":
 
         for i in valid_indices:
             for j in valid_indices[valid_indices.index(i) + 1:]:
-                if (cost_list[i] + cost_list[j] == money):
+                if cost_list[i] + cost_list[j] == money:
                     solution_set.append((i + 1, j + 1))
 
         for sol_tuple in solution_set:
-            print sol_tuple[0], sol_tuple[1]
+            print(sol_tuple[0], sol_tuple[1])
